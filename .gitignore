@@ -1,0 +1,28 @@
+/node_modules
+/public/storage
+/public/images
+/public/images-bkp
+/public/hot
+/storage/*.key
+/vendor/
+/doc/
+
+Homestead.json
+Homestead.yaml
+.env
+
+# JetBrains IDE family #
+########################
+/app/.idea
+/.idea
+config/ide-helper.php
+_ide_helper.php
+ideconfig
+_ide_helper*
+.phpstorm.meta.php
+
+# OS #
+######
+.DS_Store
+
+/ref
