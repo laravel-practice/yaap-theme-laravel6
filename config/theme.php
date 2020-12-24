@@ -11,7 +11,7 @@ return array(
     |
     */
 
-        'path'         => base_path('themes'),
+        'path'  => base_path('themes'),
     /*
     |--------------------------------------------------------------------------
     | Path to directory with assets
@@ -21,7 +21,7 @@ return array(
     |
     */
 
-        'assets_path'  => 'themes',
+        'assets_path'   => 'themes',
     /*
     |--------------------------------------------------------------------------
     | A pieces of theme collections
@@ -39,11 +39,11 @@ return array(
             'partial' => 'partials',
             'view' => 'views',
         ),
-    'thames' => array(
-        '' => 'Select Option',
-        'ecelebrityspy1.local' => 'ecelebrityspy1.local',
-        'ecelebrityspy2.local' => 'ecelebrityspy2.local',
-    ),
+//    'thames' => array(
+//        '' => 'Select Option',
+//        'ecelebrityspy1.local' => 'ecelebrityspy1.local',
+//        'ecelebrityspy2.local' => 'ecelebrityspy2.local',
+//    ),
 
 
 );
