@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Doctrine\Common\Cache\Cache;
 use Theme;
 
 class ThemeSelector
@@ -17,7 +16,7 @@ class ThemeSelector
      */
     public function handle(\Illuminate\Http\Request $request, Closure $next)
     {
-        Theme::init('jivan');
+        Theme::init('default');
         return $next($request);
     }
 }
