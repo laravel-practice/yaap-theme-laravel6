@@ -74,7 +74,7 @@
                 return view('welcome');
             });
 
-###AppServiceProvider
+### AppServiceProvider
     Here we set theme path like above and pass it into theme. path
     
     
