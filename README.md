@@ -1,4 +1,4 @@
-### YAAP THEME
+### YAAP THEME (Above laravel 6)
     https://github.com/yaapis/Theme
     
 ### INSTALLATION
@@ -29,19 +29,29 @@
     2. THEME PATH ADJUSTMENT     
     After you crate theme 
     php artisan theme:create default
+    php artisan theme:create mob
+    php artisan theme:create  desktop
     
     NOTE:
        In old version it create theme folder inside resources
        and in NEW Version it create Theme folder in root.
        
-       After creating theme put that theme inside default folder
-       like IF you create mob theme, create default folder and put 
+       After creating theme put that theme inside same theme name folder
+       like IF you create mob theme, create mob folder and put 
        that theme inside..... like I Did in this project...
+       TO more clear got to 
+       -> (app/http/middleware/themeSelector.php, app/Providers/AppServiceProvider.php)
+       check those comments...
+       
        (I done not know they we have to do this, but if you did this is work...)
-        And also change all config name into default
         
-        (themes/default/default/config, themes/jivan/default/config)
-        EX: 'name' => 'default',  => IN all theme
+        Tips Hack it
+         change all config name into default
+        (themes/default/default/config, themes/mob/default/config)
+        EX: 'name' => 'default',  (IN all theme)
+        Now you can select your desire theme by changing theme path (app/Providers/AppServiceProvider.php)
+            Config::set('theme.path', $mob); 
+        with changing theme name.
                 
     3. SETUP TO RUN THEME
         A.Inside app/providers/AppServiceProvider.php
@@ -55,7 +65,7 @@
         
             public function changeThemePath(){
                 $default = base_path('themes/default');
-                $jivan = base_path('themes/jivan');
+                $mob = base_path('themes/mob');
                 Config::set('theme.path', $default);
             }
         
@@ -77,6 +87,8 @@
             //    return View::make('hello');
                 return view('welcome');
             });
+            
+            To call your view you can use make or view both work.
 
 ### AppServiceProvider
     Here we set theme path like above and pass it into theme. path
@@ -95,3 +107,7 @@
     
     
 ### HAPPY CODDING...                   
+
+### LINK 
+    For below laravel 6
+    https://github.com/lifetoss/yaap-theme-laravel5.8

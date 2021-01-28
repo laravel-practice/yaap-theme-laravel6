@@ -2,7 +2,7 @@
 
 @section('content')
 
-    this is jivan theme
+    this is mobile theme
 
 @stop
 
