@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
-    private $current_theme;
-    private $has_domain_setting_table = false;
-
 
     /**
      * Register any application services.
