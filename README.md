@@ -106,8 +106,14 @@
     
     
     
-### HAPPY CODDING...                   
+### HAPPY CODDING...   
+
+### Open Source Licenses and Notices
+The open source license for the Software included in the "Open Source Notices" 
+documentation that is included with the Software. 
+That documentation also includes copies of all applicable open source licenses.               
 
 ### LINK 
     For below laravel 6
     https://github.com/lifetoss/yaap-theme-laravel5.8
+    
