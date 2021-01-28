@@ -30,12 +30,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (Schema::hasTable('domain_settings')) {
-            $this->has_domain_setting_table = true;
-            $this->current_theme = DomainSetting::where('domain_name', request()->getHttpHost())->first();
-        }
         $this->changeThemePath();
-
     }
 
     public function changeThemePath(){
