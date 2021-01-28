@@ -20,6 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/anypath', function() {
-//    return View::make('hello');
-    return view('welcome');
+    return View::make('hello');
+//    return view('welcome');
 });

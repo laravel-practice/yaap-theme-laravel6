@@ -34,11 +34,15 @@
        In old version it create theme folder inside resources
        and in NEW Version it create Theme folder in root.
        
-       After creating theme put that theme inside same name folder
-       like IF you create Default theme, create Default folder and put 
+       After creating theme put that theme inside default folder
+       like IF you create mob theme, create default folder and put 
        that theme inside..... like I Did in this project...
        (I done not know they we have to do this, but if you did this is work...)
-    
+        And also change all config name into default
+        
+        (themes/default/default/config, themes/jivan/default/config)
+        EX: 'name' => 'default',  => IN all theme
+                
     3. SETUP TO RUN THEME
         A.Inside app/providers/AppServiceProvider.php
         USE FOLLOWING CODE:-
@@ -58,7 +62,7 @@
         B. CREATE MIDDLEWARE
             app/http/middleware/ThemeSelector.php
             
-            Copy the code and paste it
+            Copy the code and paste it.
           
         C. REGISTER MIDDLEWARE (ThemeSelector.php)
             app/http/kernel.php
@@ -90,4 +94,4 @@
     
     
     
-### HAPPY CODDING..                   
+### HAPPY CODDING...                   

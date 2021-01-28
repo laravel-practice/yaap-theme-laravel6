@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-    @lang('default::labels.intro')
+    this is default theme
 @stop
 

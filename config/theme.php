@@ -39,10 +39,11 @@ return array(
             'partial' => 'partials',
             'view' => 'views',
         ),
+
 //    'thames' => array(
 //        '' => 'Select Option',
-//        'ecelebrityspy1.local' => 'ecelebrityspy1.local',
-//        'ecelebrityspy2.local' => 'ecelebrityspy2.local',
+//        'default' => 'default',
+//        'jivan' => 'jivan',
 //    ),
 
 
