@@ -115,5 +115,5 @@ That documentation also includes copies of all applicable open source licenses.
 
 ### LINK 
     For below laravel 6
-    https://github.com/lifetoss/yaap-theme-laravel5.8
+    https://github.com/laravel-practice/yaap-theme-laravel5.8
     
