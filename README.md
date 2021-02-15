@@ -6,7 +6,7 @@
     Installation is done
     
 ### CREATE
-    php artisan theme:destroy default
+    php artisan theme:create default
         
 ### DELETE
     php artisan theme:destroy default
